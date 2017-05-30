@@ -3,6 +3,7 @@ echo "Hello";
 echo "see how I work :p";
 echo "Here is another modification";
 echo "check now";
-echo "now";
+//comment
+echo "not now";
 echo "another commit";
 ?>
