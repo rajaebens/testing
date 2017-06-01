@@ -1,31 +1,9 @@
 build_settings:
     ignore:
         - "protected/runtime/"
-setup:
-    composer:
-        action: "install"
 test:
-    php_parallel_lint:
-        directory: "protected"
-    php_code_sniffer:
-        path: "protected"
-        standard: "code-sniffer-settings.xml"
-        allowed_errors: 10
-        allowed_warnings: 10
     php_unit:
         config:
-            - "protected/tests/phpunit.xml"
+            - "phpunit.xml"
         args: "--stderr"
-        path: "protected/tests/unit"
-    php_cpd:
-        allow_failures: true
-        path: "protected"
-       
-    php_docblock_checker:
-        allowed_warnings: -1
-        path: "protected"
-       
-    php_loc:
-        directory: "protected"
-    pdepend:
-        directory: "protected"
+        path: "tests/"
